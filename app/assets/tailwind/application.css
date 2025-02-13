@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@layer base {
+  button,
+  input:where([type='button'], [type='reset'], [type='submit']),
+  ::file-selector-button {
+    appearance: button;
+    cursor: pointer;
+  }
+}
